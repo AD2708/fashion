@@ -8,7 +8,7 @@ Created: Colorib
 ---------------------------------------------------------  */
 
 'use strict';
-
+import jQuery from jQuery;
 (function ($) {
 
     /*------------------

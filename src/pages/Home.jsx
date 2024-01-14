@@ -1,89 +1,29 @@
 import React from "react";
+import Header from "../components/comon/Header";
+import Footer from "../components/comon/Footer";
+import Instagram from "../components/comon/Instagram";
+import Offcanvasmenu from "../components/comon/Offcanvasmenu";
+import Search from "../components/comon/Search";
 
 const Home = () => {
     return(
         <>
-            
-    {/* < Preloder > */}
+           
+    {/* < Preloder > 
      <div id="preloder">
         <div className="loader"></div>
-    </div> 
+    </div> */}
 
     {/* < Offcanvas Menu > */}
     <div className="offcanvas-menu-overlay"></div>
     <div className="offcanvas-menu-wrapper">
-        <div className="offcanvas__close">+</div>
-        <ul className="offcanvas__widget">
-            <li><span className="icon_search search-switch"></span></li>
-            <li><a href="#"><span className="icon_heart_alt"></span>
-                <div className="tip">2</div>
-            </a></li>
-            <li><a href="#"><span className="icon_bag_alt"></span>
-                <div className="tip">2</div>
-            </a></li>
-        </ul>
-        <div className="offcanvas__logo">
-            <a href="./index.html"><img src="assets/img/logo.png" alt="" /></a>
-        </div>
-        <div id="mobile-menu-wrap"></div>
-        <div className="offcanvas__auth">
-            <a href="#">Login</a>
-            <a href="#">Register</a>
-        </div>
+      <Offcanvasmenu></Offcanvasmenu>
     </div>
 
 
     {/* < Header > */}
     <header className="header">
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col-xl-3 col-lg-2">
-                    <div className="header__logo">
-                        <a href="./index.html"><img src="assets/img/logo.png" alt=""/></a>
-                    </div>
-                </div>
-                <div className="col-xl-6 col-lg-7">
-                    <nav className="header__menu">
-                        <ul>
-                            <li className="active"><a href="./index.html">Home</a></li>
-                            <li><a href="#">Women’s</a></li>
-                            <li><a href="#">Men’s</a></li>
-                            <li><a href="./shop.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul className="dropdown">
-                                    <li><a href="./product-details.html">Product Details</a></li>
-                                    <li><a href="./shop-cart.html">Shop Cart</a></li>
-                                    <li><a href="./checkout.html">Checkout</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div className="col-lg-3">
-                    <div className="header__right">
-                        <div className="header__right__auth">
-                            <a href="#">Login</a>
-                            <a href="#">Register</a>
-                        </div>
-                        <ul className="header__right__widget">
-                            <li><span className="icon_search search-switch"></span></li>
-                            <li><a href="#"><span className="icon_heart_alt"></span>
-                                <div className="tip">2</div>
-                            </a></li>
-                            <li><a href="#"><span className="icon_bag_alt"></span>
-                                <div className="tip">2</div>
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div className="canvas__open">
-                <i className="fa fa-bars"></i>
-            </div>
-        </div>
+        <Header></Header>
     </header>
     
 
@@ -93,7 +33,7 @@ const Home = () => {
             <div className="row">
                 <div className="col-lg-6 p-0">
                     <div className="categories__item categories__large__item set-bg"
-                    data-setbg="assets/img/categories/category-1.jpg">
+                    data-setbg="assets/img/categories/category-1.jpg" style={{ backgroundImage: 'url("assets/img/categories/category-1.jpg")' }}>
                     <div className="categories__text">
                         <h1>Women’s fashion</h1>
                         <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
@@ -105,7 +45,7 @@ const Home = () => {
             <div className="col-lg-6">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 p-0">
-                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-2.jpg">
+                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-2.jpg" style={{ backgroundImage: 'url("assets/img/categories/category-2.jpg")' }}>
                             <div className="categories__text">
                                 <h4>Men’s fashion</h4>
                                 <p>358 items</p>
@@ -114,7 +54,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 p-0">
-                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-3.jpg">
+                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-3.jpg" style={{ backgroundImage: 'url("assets/img/categories/category-3.jpg")' }}>
                             <div className="categories__text">
                                 <h4>Kid’s fashion</h4>
                                 <p>273 items</p>
@@ -123,7 +63,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 p-0">
-                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-4.jpg">
+                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-4.jpg" style={{ backgroundImage: 'url("assets/img/categories/category-4.jpg")' }}>
                             <div className="categories__text">
                                 <h4>Cosmetics</h4>
                                 <p>159 items</p>
@@ -132,7 +72,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 p-0">
-                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-5.jpg">
+                        <div className="categories__item set-bg" data-setbg="assets/img/categories/category-5.jpg" style={{ backgroundImage: 'url("assets/img/categories/category-5.jpg")' }}>
                             <div className="categories__text">
                                 <h4>Accessories</h4>
                                 <p>792 items</p>
@@ -145,7 +85,7 @@ const Home = () => {
         </div>
     </div>
 </section>
-
+ 
 
 {/* < Product > */}
 <section className="product spad">
@@ -170,7 +110,7 @@ const Home = () => {
         <div className="row property__gallery">
             <div className="col-lg-3 col-md-4 col-sm-6 mix women">
                 <div className="product__item">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-1.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-1.jpg" style={{ backgroundImage: 'url("assets/img/product/product-1.jpg")' }}>
                         <div className="label new">New</div>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-1.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
@@ -193,7 +133,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix men">
                 <div className="product__item">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-2.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-2.jpg" style={{ backgroundImage: 'url("assets/img/product/product-2.jpg")' }}>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-2.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
                             <li><a href="#"><span className="icon_heart_alt"></span></a></li>
@@ -215,7 +155,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix accessories">
                 <div className="product__item">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-3.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-3.jpg" style={{ backgroundImage: 'url("assets/img/product/product-3.jpg")' }}>
                         <div className="label stockout">out of stock</div>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-3.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
@@ -238,7 +178,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix cosmetic">
                 <div className="product__item">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-4.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-4.jpg" style={{ backgroundImage: 'url("assets/img/product/product-4.jpg")' }}>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-4.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
                             <li><a href="#"><span className="icon_heart_alt"></span></a></li>
@@ -260,7 +200,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix kid">
                 <div className="product__item">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-5.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-5.jpg" style={{ backgroundImage: 'url("assets/img/product/product-5.jpg")' }}>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-5.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
                             <li><a href="#"><span className="icon_heart_alt"></span></a></li>
@@ -282,7 +222,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
                 <div className="product__item sale">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-6.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-6.jpg" style={{ backgroundImage: 'url("assets/img/product/product-6.jpg")' }}>
                         <div className="label sale">Sale</div>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-6.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
@@ -305,7 +245,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
                 <div className="product__item">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-7.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-7.jpg" style={{ backgroundImage: 'url("assets/img/product/product-7.jpg")' }}>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-7.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
                             <li><a href="#"><span className="icon_heart_alt"></span></a></li>
@@ -327,7 +267,7 @@ const Home = () => {
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
                 <div className="product__item sale">
-                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-8.jpg">
+                    <div className="product__item__pic set-bg" data-setbg="assets/img/product/product-8.jpg" style={{ backgroundImage: 'url("assets/img/product/product-8.jpg")' }}>
                         <div className="label">Sale</div>
                         <ul className="product__hover">
                             <li><a href="assets/img/product/product-8.jpg" className="image-popup"><span className="arrow_expand"></span></a></li>
@@ -354,33 +294,57 @@ const Home = () => {
 
 
 {/*< Banner > */}
-<section className="banner set-bg" data-setbg="assets/img/banner/banner-1.jpg">
-    <div className="container">
-        <div className="row">
-            <div className="col-xl-7 col-lg-8 m-auto">
-                <div className="banner__slider owl-carousel">
-                    <div className="banner__item">
-                        <div className="banner__text">
+        <section class="banner set-bg" data-setbg="assets/img/banner/banner-1.jpg" style={{ backgroundImage: 'url("assets/img/banner/banner-1.jpg")' }}>
+            <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 m-auto">
+                    <div class="banner__slider owl-carousel owl-loaded owl-drag">
+                    
+                    
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style={{transform: 'translate3d(-2070px, 0px, 0px)', transition: 'all 1.2s ease 0s', width: '4830px' }}><div class="owl-item cloned" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
                             <span>The Chloe Collection</span>
                             <h1>The Project Jacket</h1>
                             <a href="#">Shop now</a>
                         </div>
-                    </div>
-                    <div className="banner__item">
-                        <div className="banner__text">
+                    </div></div><div class="owl-item cloned" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
                             <span>The Chloe Collection</span>
                             <h1>The Project Jacket</h1>
                             <a href="#">Shop now</a>
                         </div>
-                    </div>
-                    <div className="banner__item">
-                        <div className="banner__text">
+                    </div></div><div class="owl-item" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
                             <span>The Chloe Collection</span>
                             <h1>The Project Jacket</h1>
                             <a href="#">Shop now</a>
                         </div>
-                    </div>
-                </div>
+                    </div></div><div class="owl-item active" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div></div><div class="owl-item" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div></div><div class="owl-item cloned" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div></div><div class="owl-item cloned" style={{width: '690px'}}><div class="banner__item">
+                        <div class="banner__text">
+                            <span>The Chloe Collection</span>
+                            <h1>The Project Jacket</h1>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
             </div>
         </div>
     </div>
@@ -640,134 +604,21 @@ const Home = () => {
 </section>
 
 
-{/* < Instagram Begin > */}
+{/* < Instagram > */}
 <div className="instagram">
-    <div className="container-fluid">
-        <div className="row">
-            <div className="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div className="instagram__item set-bg" data-setbg="assets/img/instagram/insta-1.jpg">
-                    <div className="instagram__text">
-                        <i className="fa fa-instagram"></i>
-                        <a href="#">@ ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div className="instagram__item set-bg" data-setbg="assets/img/instagram/insta-2.jpg">
-                    <div className="instagram__text">
-                        <i className="fa fa-instagram"></i>
-                        <a href="#">@ ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div className="instagram__item set-bg" data-setbg="assets/img/instagram/insta-3.jpg">
-                    <div className="instagram__text">
-                        <i className="fa fa-instagram"></i>
-                        <a href="#">@ ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div className="instagram__item set-bg" data-setbg="assets/img/instagram/insta-4.jpg">
-                    <div className="instagram__text">
-                        <i className="fa fa-instagram"></i>
-                        <a href="#">@ ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div className="instagram__item set-bg" data-setbg="assets/img/instagram/insta-5.jpg">
-                    <div className="instagram__text">
-                        <i className="fa fa-instagram"></i>
-                        <a href="#">@ ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div className="instagram__item set-bg" data-setbg="assets/img/instagram/insta-6.jpg">
-                    <div className="instagram__text">
-                        <i className="fa fa-instagram"></i>
-                        <a href="#">@ ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   <Instagram></Instagram>
 </div>
 
 
 {/* < Footer > */}
 <footer className="footer">
-    <div className="container">
-        <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-7">
-                <div className="footer__about">
-                    <div className="footer__logo">
-                        <a href="./index.html"><img src="assets/img/logo.png" alt=""/></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    cilisis.</p>
-                    <div className="footer__payment">
-                        <a href="#"><img src="assets/img/payment/payment-1.png" alt=""/></a>
-                        <a href="#"><img src="assets/img/payment/payment-2.png" alt=""/></a>
-                        <a href="#"><img src="assets/img/payment/payment-3.png" alt=""/></a>
-                        <a href="#"><img src="assets/img/payment/payment-4.png" alt=""/></a>
-                        <a href="#"><img src="assets/img/payment/payment-5.png" alt=""/></a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-5">
-                <div className="footer__widget">
-                    <h6>Quick links</h6>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-4">
-                <div className="footer__widget">
-                    <h6>Account</h6>
-                    <ul>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Orders Tracking</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className="col-lg-4 col-md-8 col-sm-8">
-                <div className="footer__newslatter">
-                    <h6>NEWSLETTER</h6>
-                    <form action="#">
-                        <input type="text" placeholder="Email"/>
-                        <button type="submit" className="site-btn">Subscribe</button>
-                    </form>
-                    <div className="footer__social">
-                        <a href="#"><i className="fa fa-facebook"></i></a>
-                        <a href="#"><i className="fa fa-twitter"></i></a>
-                        <a href="#"><i className="fa fa-youtube-play"></i></a>
-                        <a href="#"><i className="fa fa-instagram"></i></a>
-                        <a href="#"><i className="fa fa-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   <Footer></Footer>
 </footer>
 
 
 {/* < Search > */}
 <div className="search-model">
-    <div className="h-100 d-flex align-items-center justify-content-center">
-        <div className="search-close-switch">+</div>
-        <form className="search-model-form">
-            <input type="text" id="search-input" placeholder="Search here....."/>
-        </form>
-    </div>
+    <Search></Search>
 </div>
         </>
     )
